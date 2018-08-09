@@ -31,7 +31,7 @@ begin
   end process;
 
   process(clock, switch) 
-      variable counter : integer range 0 to 25000000 := 0;
+      variable counter : integer range 0 to 50000000 := 0;
 		variable fq		  : integer range 0 to 50000000 := 10000000;
 		
 		begin

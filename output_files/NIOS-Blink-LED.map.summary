@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Aug  9 11:37:48 2018
+Analysis & Synthesis Status : Successful - Thu Aug  9 11:58:47 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : NIOS-Blink-LED
 Top-level Entity Name : topLevel
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 27
+Total registers : 28
 Total pins : 13
 Total virtual pins : 0
 Total block memory bits : 0

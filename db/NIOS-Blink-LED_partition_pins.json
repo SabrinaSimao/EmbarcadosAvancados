@@ -32,11 +32,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "fpga_sw_pio[1]",
+					"name" : "fpga_sw_pio[3]",
 					"strict" : false
 				},
 				{
-					"name" : "fpga_sw_pio[3]",
+					"name" : "fpga_sw_pio[2]",
 					"strict" : false
 				},
 				{
@@ -44,7 +44,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "fpga_sw_pio[2]",
+					"name" : "fpga_sw_pio[1]",
 					"strict" : false
 				},
 				{

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NIOS-Blink-LED
-Thu Aug  9 11:37:48 2018
+Thu Aug  9 11:58:47 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -43,13 +43,13 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Aug  9 11:37:48 2018           ;
+; Analysis & Synthesis Status     ; Successful - Thu Aug  9 11:58:47 2018           ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                   ; NIOS-Blink-LED                                  ;
 ; Top-level Entity Name           ; topLevel                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 27                                              ;
+; Total registers                 ; 28                                              ;
 ; Total pins                      ; 13                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -182,25 +182,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 44                   ;
+; Estimate of Logic utilization (ALMs needed) ; 46                   ;
 ;                                             ;                      ;
-; Combinational ALUT usage for logic          ; 72                   ;
+; Combinational ALUT usage for logic          ; 76                   ;
 ;     -- 7 input functions                    ; 0                    ;
-;     -- 6 input functions                    ; 15                   ;
-;     -- 5 input functions                    ; 13                   ;
+;     -- 6 input functions                    ; 16                   ;
+;     -- 5 input functions                    ; 15                   ;
 ;     -- 4 input functions                    ; 15                   ;
-;     -- <=3 input functions                  ; 29                   ;
+;     -- <=3 input functions                  ; 30                   ;
 ;                                             ;                      ;
-; Dedicated logic registers                   ; 27                   ;
+; Dedicated logic registers                   ; 28                   ;
 ;                                             ;                      ;
 ; I/O pins                                    ; 13                   ;
 ;                                             ;                      ;
 ; Total DSP Blocks                            ; 0                    ;
 ;                                             ;                      ;
-; Maximum fan-out node                        ; fpga_sw_pio[1]~input ;
-; Maximum fan-out                             ; 27                   ;
-; Total fan-out                               ; 369                  ;
-; Average fan-out                             ; 2.95                 ;
+; Maximum fan-out node                        ; fpga_sw_pio[3]~input ;
+; Maximum fan-out                             ; 29                   ;
+; Total fan-out                               ; 390                  ;
+; Average fan-out                             ; 3.00                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -209,8 +209,8 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+----------------+--------------+
-; |topLevel                  ; 72 (0)              ; 27 (0)                    ; 0                 ; 0          ; 13   ; 0            ; |topLevel                   ; topLevel       ; work         ;
-;    |LED_peripheral:u1|     ; 72 (72)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |topLevel|LED_peripheral:u1 ; LED_peripheral ; work         ;
+; |topLevel                  ; 76 (0)              ; 28 (0)                    ; 0                 ; 0          ; 13   ; 0            ; |topLevel                   ; topLevel       ; work         ;
+;    |LED_peripheral:u1|     ; 76 (76)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |topLevel|LED_peripheral:u1 ; LED_peripheral ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -220,8 +220,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 27    ;
-; Number of registers using Synchronous Clear  ; 25    ;
+; Total registers                              ; 28    ;
+; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -238,7 +238,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 16:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |topLevel|LED_peripheral:u1|fq[15] ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |topLevel|LED_peripheral:u1|fq[8]  ;
 ; 16:1               ; 3 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; No         ; |topLevel|LED_peripheral:u1|fq[22] ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |topLevel|LED_peripheral:u1|fq[24] ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |topLevel|LED_peripheral:u1|fq[6]  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |topLevel|LED_peripheral:u1|fq[13] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
@@ -248,22 +248,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 27                          ;
-;     SCLR              ; 25                          ;
+; arriav_ff             ; 28                          ;
+;     SCLR              ; 26                          ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 72                          ;
-;     arith             ; 25                          ;
-;         1 data inputs ; 25                          ;
-;     normal            ; 47                          ;
+; arriav_lcell_comb     ; 76                          ;
+;     arith             ; 26                          ;
+;         1 data inputs ; 26                          ;
+;     normal            ; 50                          ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 3                           ;
 ;         4 data inputs ; 15                          ;
-;         5 data inputs ; 13                          ;
-;         6 data inputs ; 15                          ;
+;         5 data inputs ; 15                          ;
+;         6 data inputs ; 16                          ;
 ; boundary_port         ; 13                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.38                        ;
+; Average LUT depth     ; 3.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Thu Aug  9 11:37:37 2018
+    Info: Processing started: Thu Aug  9 11:58:36 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NIOS-Blink-LED -c NIOS-Blink-LED
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -294,45 +294,45 @@ Info (12021): Found 2 design units, including 1 entities, in source file output_
     Info (12023): Found entity 1: LED_peripheral File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 4
 Info (12127): Elaborating entity "topLevel" for the top level hierarchy
 Info (12128): Elaborating entity "LED_peripheral" for hierarchy "LED_peripheral:u1" File: /home/sabrina/GitHub/EmbarcadosAvancados/topLevel.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LED_peripheral.vhd(32): inferring latch(es) for signal or variable "fq", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 32
-Info (10041): Inferred latch for "fq[0]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[1]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[2]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[3]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[4]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[5]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[6]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[7]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[8]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[9]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[10]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[11]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[12]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[13]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[14]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[15]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[16]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[17]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[18]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[19]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[20]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[21]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[22]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[23]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[24]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
-Info (10041): Inferred latch for "fq[25]" at LED_peripheral.vhd(53) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 53
+Warning (10631): VHDL Process Statement warning at LED_peripheral.vhd(33): inferring latch(es) for signal or variable "fq", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 33
+Info (10041): Inferred latch for "fq[0]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[1]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[2]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[3]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[4]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[5]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[6]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[7]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[8]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[9]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[10]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[11]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[12]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[13]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[14]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[15]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[16]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[17]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[18]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[19]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[20]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[21]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[22]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[23]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[24]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
+Info (10041): Inferred latch for "fq[25]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/output_files/LED_peripheral.vhd Line: 55
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "fpga_key_pio[1]" File: /home/sabrina/GitHub/EmbarcadosAvancados/topLevel.vhd Line: 12
-Info (21057): Implemented 85 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 72 logic cells
+    Info (21061): Implemented 76 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1031 megabytes
-    Info: Processing ended: Thu Aug  9 11:37:48 2018
+    Info: Peak virtual memory: 1034 megabytes
+    Info: Processing ended: Thu Aug  9 11:58:47 2018
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:26
 
