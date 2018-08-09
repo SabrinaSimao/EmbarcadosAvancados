@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 100C Model Setup 'fpga_clk_50'
+Slack : -3.846
+TNS   : -94.570
+
+Type  : Slow 1100mV 100C Model Setup 'fpga_key_pio[0]'
+Slack : -1.082
+TNS   : -1.082
+
+Type  : Slow 1100mV 100C Model Hold 'fpga_clk_50'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Hold 'fpga_key_pio[0]'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'fpga_clk_50'
+Slack : -0.538
+TNS   : -22.431
+
+Type  : Slow 1100mV 100C Model Minimum Pulse Width 'fpga_key_pio[0]'
+Slack : -0.538
+TNS   : -0.916
+
+Type  : Slow 1100mV -40C Model Setup 'fpga_clk_50'
+Slack : -3.704
+TNS   : -92.308
+
+Type  : Slow 1100mV -40C Model Setup 'fpga_key_pio[0]'
+Slack : -1.031
+TNS   : -1.031
+
+Type  : Slow 1100mV -40C Model Hold 'fpga_clk_50'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Hold 'fpga_key_pio[0]'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'fpga_clk_50'
+Slack : -0.538
+TNS   : -20.985
+
+Type  : Slow 1100mV -40C Model Minimum Pulse Width 'fpga_key_pio[0]'
+Slack : -0.538
+TNS   : -1.030
+
+Type  : Fast 1100mV 100C Model Setup 'fpga_clk_50'
+Slack : -1.368
+TNS   : -31.146
+
+Type  : Fast 1100mV 100C Model Setup 'fpga_key_pio[0]'
+Slack : -0.131
+TNS   : -0.131
+
+Type  : Fast 1100mV 100C Model Hold 'fpga_clk_50'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Hold 'fpga_key_pio[0]'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'fpga_key_pio[0]'
+Slack : -0.612
+TNS   : -1.032
+
+Type  : Fast 1100mV 100C Model Minimum Pulse Width 'fpga_clk_50'
+Slack : -0.388
+TNS   : -11.779
+
+Type  : Fast 1100mV -40C Model Setup 'fpga_clk_50'
+Slack : -1.091
+TNS   : -24.428
+
+Type  : Fast 1100mV -40C Model Setup 'fpga_key_pio[0]'
+Slack : -0.055
+TNS   : -0.055
+
+Type  : Fast 1100mV -40C Model Hold 'fpga_clk_50'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Hold 'fpga_key_pio[0]'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'fpga_key_pio[0]'
+Slack : -0.675
+TNS   : -1.249
+
+Type  : Fast 1100mV -40C Model Minimum Pulse Width 'fpga_clk_50'
+Slack : -0.448
+TNS   : -15.579
+
+------------------------------------------------------------
