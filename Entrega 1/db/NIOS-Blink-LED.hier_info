@@ -1,11 +1,11 @@
 |topLevel
 fpga_clk_50 => LED_peripheral:u1.clock
-fpga_led_pio[0] << LED_peripheral:u1.led[0]
-fpga_led_pio[1] << LED_peripheral:u1.led[1]
-fpga_led_pio[2] << LED_peripheral:u1.led[2]
-fpga_led_pio[3] << LED_peripheral:u1.led[3]
-fpga_led_pio[4] << LED_peripheral:u1.led[4]
-fpga_led_pio[5] << LED_peripheral:u1.led[5]
+fpga_led_pio[0] <= LED_peripheral:u1.led[0]
+fpga_led_pio[1] <= LED_peripheral:u1.led[1]
+fpga_led_pio[2] <= LED_peripheral:u1.led[2]
+fpga_led_pio[3] <= LED_peripheral:u1.led[3]
+fpga_led_pio[4] <= LED_peripheral:u1.led[4]
+fpga_led_pio[5] <= LED_peripheral:u1.led[5]
 fpga_sw_pio[0] => LED_peripheral:u1.switch[0]
 fpga_sw_pio[1] => LED_peripheral:u1.switch[1]
 fpga_sw_pio[2] => LED_peripheral:u1.switch[2]

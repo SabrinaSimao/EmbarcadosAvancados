@@ -1,5 +1,5 @@
 Analysis & Elaboration report for NIOS-Blink-LED
-Thu Aug  9 12:25:56 2018
+Mon Aug 13 15:22:56 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -9,8 +9,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: LED_peripheral:u1
+  5. Analysis & Elaboration Settings
+  6. Analysis & Elaboration Messages
 
 
 
@@ -36,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Aug  9 12:25:56 2018           ;
+; Analysis & Elaboration Status ; Successful - Mon Aug 13 15:22:56 2018           ;
 ; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                 ; NIOS-Blink-LED                                  ;
 ; Top-level Entity Name         ; topLevel                                        ;
@@ -65,6 +66,16 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LED_peripheral:u1 ;
++----------------+----------+------------------------------------+
+; Parameter Name ; Value    ; Type                               ;
++----------------+----------+------------------------------------+
+; maxfrequency   ; 50000000 ; Signed Integer                     ;
++----------------+----------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -160,7 +171,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Thu Aug  9 12:25:45 2018
+    Info: Processing started: Mon Aug 13 15:22:43 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NIOS-Blink-LED -c NIOS-Blink-LED --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -168,41 +179,41 @@ Info (12021): Found 2 design units, including 1 entities, in source file topLeve
     Info (12022): Found design unit 1: topLevel-rtl File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/topLevel.vhd Line: 17
     Info (12023): Found entity 1: topLevel File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/topLevel.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/LED_peripheral.vhd
-    Info (12022): Found design unit 1: LED_peripheral-rtl File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 17
+    Info (12022): Found design unit 1: LED_peripheral-rtl File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 18
     Info (12023): Found entity 1: LED_peripheral File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 4
 Info (12127): Elaborating entity "topLevel" for the top level hierarchy
-Info (12128): Elaborating entity "LED_peripheral" for hierarchy "LED_peripheral:u1" File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/topLevel.vhd Line: 35
-Warning (10631): VHDL Process Statement warning at LED_peripheral.vhd(33): inferring latch(es) for signal or variable "fq", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 33
-Info (10041): Inferred latch for "fq[0]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[1]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[2]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[3]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[4]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[5]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[6]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[7]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[8]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[9]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[10]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[11]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[12]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[13]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[14]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[15]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[16]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[17]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[18]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[19]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[20]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[21]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[22]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[23]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[24]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
-Info (10041): Inferred latch for "fq[25]" at LED_peripheral.vhd(55) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 55
+Info (12128): Elaborating entity "LED_peripheral" for hierarchy "LED_peripheral:u1" File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/topLevel.vhd Line: 36
+Warning (10631): VHDL Process Statement warning at LED_peripheral.vhd(34): inferring latch(es) for signal or variable "fq", which holds its previous value in one or more paths through the process File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 34
+Info (10041): Inferred latch for "fq[0]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[1]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[2]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[3]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[4]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[5]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[6]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[7]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[8]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[9]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[10]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[11]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[12]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[13]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[14]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[15]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[16]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[17]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[18]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[19]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[20]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[21]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[22]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[23]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[24]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
+Info (10041): Inferred latch for "fq[25]" at LED_peripheral.vhd(56) File: /home/sabrina/GitHub/EmbarcadosAvancados/Entrega 1/output_files/LED_peripheral.vhd Line: 56
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 1331 megabytes
-    Info: Processing ended: Thu Aug  9 12:25:56 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 1326 megabytes
+    Info: Processing ended: Mon Aug 13 15:22:56 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:26
 
 

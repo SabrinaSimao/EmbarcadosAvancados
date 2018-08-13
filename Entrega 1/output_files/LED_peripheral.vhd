@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity LED_peripheral is
+	 generic (MaxFrequency : integer := 50000000);
     port (
         -- Gloabals
         clock     : in  std_logic;             -- clock.clk
@@ -31,28 +32,28 @@ begin
   end process;
 
   process(clock, switch) 
-      variable counter : integer range 0 to 50000000 := 0;
-		variable fq		  : integer range 0 to 50000000 := 10000000;
+      variable counter : integer range 0 to MaxFrequency := 0;
+		variable fq		  : integer range 0 to MaxFrequency := 10000000;
 		
 		begin
 		
 		--frequencias variando de 10kk a 41kk (ainda vou melhorar os valores)
-		if (switch = "0000")  then fq := 41000000; end if;
-		if (switch = "0001")  then fq := 40000000; end if;
-		if (switch = "0010")  then fq := 39000000; end if;
-		if (switch = "0011")  then fq := 36000000; end if;
-		if (switch = "0100")  then fq := 34000000; end if;
-		if (switch = "0101")  then fq := 31000000; end if;
-		if (switch = "0110")  then fq := 29000000; end if;
-		if (switch = "0111")  then fq := 27000000; end if;
-		if (switch = "1000")  then fq := 25000000; end if;
-		if (switch = "1001")  then fq := 22000000; end if;
-		if (switch = "1010")  then fq := 20000000; end if;
-		if (switch = "1011")  then fq := 18000000; end if;
-		if (switch = "1100")  then fq := 16000000; end if;
-		if (switch = "1101")  then fq := 14000000; end if;
-		if (switch = "1110")  then fq := 12000000; end if;
-		if (switch = "1111")  then fq := 10000000; end if;
+		if (switch = "0000")  then fq := MaxFrequency/1; end if;
+		if (switch = "0001")  then fq := MaxFrequency/2; end if;
+		if (switch = "0010")  then fq := MaxFrequency/3; end if;
+		if (switch = "0011")  then fq := MaxFrequency/4; end if;
+		if (switch = "0100")  then fq := MaxFrequency/5; end if;
+		if (switch = "0101")  then fq := MaxFrequency/6; end if;
+		if (switch = "0110")  then fq := MaxFrequency/7; end if;
+		if (switch = "0111")  then fq := MaxFrequency/8; end if;
+		if (switch = "1000")  then fq := MaxFrequency/9; end if;
+		if (switch = "1001")  then fq := MaxFrequency/10; end if;
+		if (switch = "1010")  then fq := MaxFrequency/11; end if;
+		if (switch = "1011")  then fq := MaxFrequency/12; end if;
+		if (switch = "1100")  then fq := MaxFrequency/13; end if;
+		if (switch = "1101")  then fq := MaxFrequency/14; end if;
+		if (switch = "1110")  then fq := MaxFrequency/15; end if;
+		if (switch = "1111")  then fq := MaxFrequency/16; end if;
 		
 		
       --blink led

@@ -18,6 +18,7 @@ architecture rtl of topLevel is
 
 
 component LED_peripheral is
+    generic (MaxFrequency : integer := 50000000);
     port (
         -- Gloabals
         clock     : in  std_logic;             -- clock.clk
