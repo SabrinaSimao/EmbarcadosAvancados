@@ -1,5 +1,5 @@
 Assembler report for NIOS-Blink-LED
-Tue Aug 21 09:42:10 2018
+Thu Aug 30 09:36:40 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Aug 21 09:42:10 2018 ;
+; Assembler Status      ; Successful - Thu Aug 30 09:36:40 2018 ;
 ; Revision Name         ; NIOS-Blink-LED                        ;
 ; Top-level Entity Name ; topLevel                              ;
 ; Family                ; Cyclone V                             ;
@@ -77,8 +77,8 @@ refer to the applicable agreement for further details.
 +----------------+-----------------------------+
 ; Option         ; Setting                     ;
 +----------------+-----------------------------+
-; JTAG usercode  ; 0x073C58FC                  ;
-; Checksum       ; 0x073C58FC                  ;
+; JTAG usercode  ; 0x04142B9F                  ;
+; Checksum       ; 0x04142B9F                  ;
 +----------------+-----------------------------+
 
 
@@ -88,14 +88,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Aug 21 09:42:00 2018
+    Info: Processing started: Thu Aug 30 09:36:30 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off NIOS-Blink-LED -c NIOS-Blink-LED
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1031 megabytes
-    Info: Processing ended: Tue Aug 21 09:42:11 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 1019 megabytes
+    Info: Processing ended: Thu Aug 30 09:36:40 2018
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:09
 
 

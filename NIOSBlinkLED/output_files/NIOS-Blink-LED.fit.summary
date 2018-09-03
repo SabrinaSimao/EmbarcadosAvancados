@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Aug 21 09:41:57 2018
+Fitter Status : Successful - Thu Aug 30 09:36:21 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : NIOS-Blink-LED
 Top-level Entity Name : topLevel
 Family : Cyclone V
 Device : 5CSEBA6U23I7
 Timing Models : Final
-Logic utilization (in ALMs) : 823 / 41,910 ( 2 % )
-Total registers : 996
+Logic utilization (in ALMs) : 881 / 41,910 ( 2 % )
+Total registers : 1153
 Total pins : 13 / 314 ( 4 % )
 Total virtual pins : 0
-Total block memory bits : 2,632,704 / 5,662,720 ( 46 % )
-Total RAM Blocks : 325 / 553 ( 59 % )
+Total block memory bits : 1,321,984 / 5,662,720 ( 23 % )
+Total RAM Blocks : 165 / 553 ( 30 % )
 Total DSP Blocks : 0 / 112 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -3,6 +3,7 @@
 	<name>Hello2</name>
 	<comment></comment>
 	<projects>
+		<project>Hello2_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

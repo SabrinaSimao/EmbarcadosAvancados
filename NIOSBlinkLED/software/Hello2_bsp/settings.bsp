@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Aug 21, 2018 9:46:26 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1534855586021</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Aug 30, 2018 9:29:58 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1535632198641</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/sabrina/GitHub/EmbarcadosAvancados/NIOSBlinkLED/software/Hello2_bsp</BspGeneratedLocation>
         <BspSettingsFile>/home/sabrina/GitHub/EmbarcadosAvancados/NIOSBlinkLED/software/Hello2_bsp/settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosHello.sopcinfo</SopcDesignFile>
@@ -899,9 +899,15 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
+                <slaveDescriptor>timer_0</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000001F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes>timer</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
-                <addressRange>0x00080000 - 0x000CFFFF</addressRange>
-                <addressSpan>327680</addressSpan>
+                <addressRange>0x00080000 - 0x000A7FFF</addressRange>
+                <addressSpan>163840</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>

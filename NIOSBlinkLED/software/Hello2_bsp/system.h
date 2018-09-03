@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosHello'
  * SOPC Builder design path: ../../niosHello.sopcinfo
  *
- * Generated: Tue Aug 21 09:46:26 BRT 2018
+ * Generated: Thu Aug 30 09:02:08 BRT 2018
  */
 
 /*
@@ -136,6 +136,7 @@
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
+#define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2_GEN2
 
 
@@ -227,8 +228,8 @@
 #define ONCHIP_MEMORY2_0_READ_DURING_WRITE_MODE "DONT_CARE"
 #define ONCHIP_MEMORY2_0_SINGLE_CLOCK_OP 0
 #define ONCHIP_MEMORY2_0_SIZE_MULTIPLE 1
-#define ONCHIP_MEMORY2_0_SIZE_VALUE 327680
-#define ONCHIP_MEMORY2_0_SPAN 327680
+#define ONCHIP_MEMORY2_0_SIZE_VALUE 163840
+#define ONCHIP_MEMORY2_0_SPAN 163840
 #define ONCHIP_MEMORY2_0_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY2_0_WRITABLE 1
 
@@ -285,5 +286,31 @@
 #define PIO_1_RESET_VALUE 0
 #define PIO_1_SPAN 16
 #define PIO_1_TYPE "altera_avalon_pio"
+
+
+/*
+ * timer_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_timer_0 altera_avalon_timer
+#define TIMER_0_ALWAYS_RUN 0
+#define TIMER_0_BASE 0x0
+#define TIMER_0_COUNTER_SIZE 32
+#define TIMER_0_FIXED_PERIOD 0
+#define TIMER_0_FREQ 50000000
+#define TIMER_0_IRQ 2
+#define TIMER_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define TIMER_0_LOAD_VALUE 49999
+#define TIMER_0_MULT 0.001
+#define TIMER_0_NAME "/dev/timer_0"
+#define TIMER_0_PERIOD 1
+#define TIMER_0_PERIOD_UNITS "ms"
+#define TIMER_0_RESET_OUTPUT 0
+#define TIMER_0_SNAPSHOT 1
+#define TIMER_0_SPAN 32
+#define TIMER_0_TICKS_PER_SEC 1000
+#define TIMER_0_TIMEOUT_PULSE_OUTPUT 0
+#define TIMER_0_TYPE "altera_avalon_timer"
 
 #endif /* __SYSTEM_H_ */

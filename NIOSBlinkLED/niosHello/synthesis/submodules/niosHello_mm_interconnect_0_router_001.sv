@@ -50,9 +50,9 @@ module niosHello_mm_interconnect_0_router_001_default_decode
                DEFAULT_DESTID = 2 
    )
   (output [83 - 81 : 0] default_destination_id,
-   output [5-1 : 0] default_wr_channel,
-   output [5-1 : 0] default_rd_channel,
-   output [5-1 : 0] default_src_channel
+   output [6-1 : 0] default_wr_channel,
+   output [6-1 : 0] default_rd_channel,
+   output [6-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
@@ -63,7 +63,7 @@ module niosHello_mm_interconnect_0_router_001_default_decode
       assign default_src_channel = '0;
     end
     else begin : default_channel_assignment
-      assign default_src_channel = 5'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 6'b1 << DEFAULT_CHANNEL;
     end
   endgenerate
 
@@ -73,8 +73,8 @@ module niosHello_mm_interconnect_0_router_001_default_decode
       assign default_rd_channel = '0;
     end
     else begin : default_rw_channel_assignment
-      assign default_wr_channel = 5'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 5'b1 << DEFAULT_RD_CHANNEL;
+      assign default_wr_channel = 6'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 6'b1 << DEFAULT_RD_CHANNEL;
     end
   endgenerate
 
@@ -103,7 +103,7 @@ module niosHello_mm_interconnect_0_router_001
     // -------------------
     output                          src_valid,
     output reg [97-1    : 0] src_data,
-    output reg [5-1 : 0] src_channel,
+    output reg [6-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -119,7 +119,7 @@ module niosHello_mm_interconnect_0_router_001
     localparam PKT_PROTECTION_H = 87;
     localparam PKT_PROTECTION_L = 85;
     localparam ST_DATA_W = 97;
-    localparam ST_CHANNEL_W = 5;
+    localparam ST_CHANNEL_W = 6;
     localparam DECODER_TYPE = 0;
 
     localparam PKT_TRANS_WRITE = 59;
@@ -134,7 +134,7 @@ module niosHello_mm_interconnect_0_router_001
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h100000 - 64'h80000); 
+    localparam PAD0 = log2ceil(64'hc0000 - 64'h80000); 
     localparam PAD1 = log2ceil(64'h101000 - 64'h100800); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
@@ -165,7 +165,7 @@ module niosHello_mm_interconnect_0_router_001
     assign src_startofpacket = sink_startofpacket;
     assign src_endofpacket   = sink_endofpacket;
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [5-1 : 0] default_src_channel;
+    wire [6-1 : 0] default_src_channel;
 
 
 
@@ -189,15 +189,15 @@ module niosHello_mm_interconnect_0_router_001
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-    // ( 0x80000 .. 0x100000 )
+    // ( 0x80000 .. 0xc0000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 21'h80000   ) begin
-            src_channel = 5'b10;
+            src_channel = 6'b10;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 
     // ( 0x100800 .. 0x101000 )
     if ( {address[RG:PAD1],{PAD1{1'b0}}} == 21'h100800   ) begin
-            src_channel = 5'b01;
+            src_channel = 6'b01;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
     end
 
