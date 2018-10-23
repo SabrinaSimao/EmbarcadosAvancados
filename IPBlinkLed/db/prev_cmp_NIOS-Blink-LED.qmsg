@@ -1,0 +1,13 @@
+{ "Info" "0" "" "qar.tcl version #1" {  } {  } 0 0 "qar.tcl version #1" 0 0 "0" 0 0 1536059839805 ""}
+{ "Info" "0" "" "Including '-use_file_set basic' by default" {  } {  } 0 0 "Including '-use_file_set basic' by default" 0 0 "0" 0 0 1536059839911 ""}
+{ "Info" "0" "" "All project revisions will be stored in common archive NIOS-Blink-LED_tmp_archive.qar" {  } {  } 0 0 "All project revisions will be stored in common archive NIOS-Blink-LED_tmp_archive.qar" 0 0 "0" 0 0 1536059839911 ""}
+{ "Info" "0" "" "Initializing files for 'NIOS-Blink-LED' revision" {  } {  } 0 0 "Initializing files for 'NIOS-Blink-LED' revision" 0 0 "0" 0 0 1536059840044 ""}
+{ "Info" "0" "" "File Set 'Source control' contains:" { { "Info" "0" "" "Project source and settings files" {  } {  } 0 0 "Project source and settings files" 0 0 "0" 0 0 1536059840051 ""} { "Info" "0" "" "Automatically detected source files" {  } {  } 0 0 "Automatically detected source files" 0 0 "0" 0 0 1536059840051 ""}  } {  } 0 0 "File Set 'Source control' contains:" 0 0 "0" 0 0 1536059840051 ""}
+{ "Warning" "0" "" "Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver" {  } {  } 0 0 "Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver" 0 0 "0" 0 0 1536059840176 ""}
+{ "Info" "0" "" "Archive will store files relative to the closest common parent directory" {  } {  } 0 0 "Archive will store files relative to the closest common parent directory" 0 0 "0" 0 0 1536059840303 ""}
+{ "Info" "IPRJ_ARC_TCL_TCL_USING_COMMON_DIR" "/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/ " "Using common directory /home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/" {  } {  } 0 13213 "Using common directory %1!s!" 0 0 "Design Software" 0 -1 1536059840341 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1536059840405 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1536059840406 ""}
+{ "Info" "0" "" "Generated archive 'NIOS-Blink-LED_tmp_archive.qar'" {  } {  } 0 0 "Generated archive 'NIOS-Blink-LED_tmp_archive.qar'" 0 0 "0" 0 0 1536059840406 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1536059840406 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1536059840406 ""}

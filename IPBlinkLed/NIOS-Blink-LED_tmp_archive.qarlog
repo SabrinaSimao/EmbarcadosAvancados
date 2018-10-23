@@ -1,0 +1,70 @@
+Quartus Prime Archive log --	/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/NIOS-Blink-LED_tmp_archive.qarlog
+
+Archive:	/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/NIOS-Blink-LED_tmp_archive.qar
+Date:		Tue Sep  4 08:17:20 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/NIOS-Blink-LED.qpf
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/NIOS-Blink-LED.qsf
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello.qsys
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello.sopcinfo
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/niosHello.cmp
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/niosHello.debuginfo
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/niosHello.qip
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/niosHello.regmap
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/niosHello.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_avalon_sc_fifo.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_merlin_arbitrator.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_merlin_master_agent.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_merlin_master_translator.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_merlin_slave_agent.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_merlin_slave_translator.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_reset_controller.sdc
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_reset_controller.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/altera_reset_synchronizer.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_irq_mapper.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_jtag_uart_0.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_avalon_st_adapter.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_cmd_demux.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_cmd_demux_001.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_cmd_mux.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_cmd_mux_001.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_router.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_router_001.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_router_002.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_router_003.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_rsp_demux.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_rsp_mux.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_mm_interconnect_0_rsp_mux_001.sv
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu.sdc
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_sysclk.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_tck.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_wrapper.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_ociram_default_contents.mif
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_rf_ram_a.mif
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_rf_ram_b.mif
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_nios2_gen2_0_cpu_test_bench.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_onchip_memory2_0.hex
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_onchip_memory2_0.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_pio_0.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_pio_1.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/niosHello/synthesis/submodules/niosHello_timer_0.v
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/output_files/LED_peripheral.vhd
+/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/topLevel.vhd
+/home/sabrina/intelFPGA_lite/18.0/quartus/linux64/assignment_defaults.qdf
+	======= Total: 53 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Sep  4 08:17:21 2018
+Source archive file:	/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed/NIOS-Blink-LED_tmp_archive.qar
+Archive was extracted into	/home/sabrina/GitHub/EmbarcadosAvancados/IPBlinkLed_copy/
+		 - successfully.

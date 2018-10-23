@@ -1,0 +1,368 @@
+arm-tdep.o: arm-tdep.c defs.h common/common-defs.h config.h \
+ build-gnulib/config.h build-gnulib/import/stdio.h \
+ build-gnulib/import/stdlib.h build-gnulib/import/string.h \
+ ../include/ansidecl.h ../include/libiberty.h ../include/ansidecl.h \
+ gnulib/import/pathmax.h build-gnulib/import/unistd.h \
+ build-gnulib/import/limits.h ../include/gdb/signals.h \
+ ../include/gdb/signals.def common/gdb_locale.h common/ptid.h \
+ common/common-types.h ../bfd/bfd.h ../include/symcat.h \
+ ../include/diagnostics.h build-gnulib/import/sys/stat.h \
+ build-gnulib/import/inttypes.h common/common-utils.h common/poison.h \
+ common/traits.h ../include/obstack.h common/gdb_assert.h common/errors.h \
+ common/print-utils.h common/common-debug.h common/cleanups.h \
+ common/common-exceptions.h common/poison.h common/gdb_unique_ptr.h \
+ build-gnulib/import/fcntl.h gdb_wchar.h build-gnulib/import/wctype.h \
+ ui-file.h common/host-defs.h common/enum-flags.h ../include/hashtab.h \
+ ../include/fopen-bin.h gdbarch.h frame.h language.h symtab.h \
+ common/gdb_vecs.h common/vec.h gdbtypes.h common/offset-type.h \
+ common/underlying.h common/print-utils.h common/function-view.h \
+ common/gdb_optional.h common/traits.h completer.h command.h \
+ common/scoped_restore.h minsyms.h expression.h std-operator.def \
+ ada-operator.def unwind_stop_reasons.def ../include/dis-asm.h \
+ gdb_obstack.h regcache.h common/common-regcache.h utils.h exceptions.h \
+ ui-out.h inferior.h breakpoint.h value.h extension.h mi/mi-cmds.h \
+ common/vec.h common/gdb_ref_ptr.h common/vec.h ax.h common/ax.def \
+ common/break-common.h probe.h location.h common/array-view.h \
+ common/traits.h cli/cli-script.h target.h infrun.h common/byte-vector.h \
+ common/def-vector.h common/default-init-alloc.h target/target.h \
+ target/waitstatus.h common/gdb_signals.h target/resume.h target/wait.h \
+ target/waitstatus.h memattr.h btrace.h common/btrace-common.h record.h \
+ disasm.h tracepoint.h memrange.h common/environ.h progspace.h gdb_bfd.h \
+ registry.h symfile-add-flags.h common/refcounted-object.h \
+ common/common-inferior.h gdbcmd.h gdbcore.h exec.h reggroups.h \
+ target-float.h arch-utils.h osabi.h frame-unwind.h frame-base.h \
+ trad-frame.h objfiles.h objfile-flags.h symfile.h dwarf2-frame.h \
+ prologue-value.h remote.h remote-notif.h common/queue.h \
+ target-descriptions.h common/tdesc.h user-regs.h observable.h \
+ common/observable.h arch/arm.h arch/arm-get-next-pcs.h arm-tdep.h \
+ ../include/gdb/sim-arm.h ../bfd/elf-bfd.h ../include/elf/common.h \
+ ../include/elf/external.h ../include/elf/internal.h ../include/bfdlink.h \
+ ../include/coff/internal.h ../include/elf/arm.h \
+ ../include/elf/reloc-macros.h record-full.h features/arm/arm-with-m.c \
+ defs.h osabi.h target-descriptions.h \
+ features/arm/arm-with-m-fpa-layout.c features/arm/arm-with-m-vfp-d16.c \
+ features/arm/arm-with-iwmmxt.c features/arm/arm-with-vfpv2.c \
+ features/arm/arm-with-vfpv3.c features/arm/arm-with-neon.c \
+ ../bfd/bfd-in2.h ../bfd/libcoff.h ../bfd/coff-bfd.h
+
+defs.h:
+
+common/common-defs.h:
+
+config.h:
+
+build-gnulib/config.h:
+
+build-gnulib/import/stdio.h:
+
+build-gnulib/import/stdlib.h:
+
+build-gnulib/import/string.h:
+
+../include/ansidecl.h:
+
+../include/libiberty.h:
+
+../include/ansidecl.h:
+
+gnulib/import/pathmax.h:
+
+build-gnulib/import/unistd.h:
+
+build-gnulib/import/limits.h:
+
+../include/gdb/signals.h:
+
+../include/gdb/signals.def:
+
+common/gdb_locale.h:
+
+common/ptid.h:
+
+common/common-types.h:
+
+../bfd/bfd.h:
+
+../include/symcat.h:
+
+../include/diagnostics.h:
+
+build-gnulib/import/sys/stat.h:
+
+build-gnulib/import/inttypes.h:
+
+common/common-utils.h:
+
+common/poison.h:
+
+common/traits.h:
+
+../include/obstack.h:
+
+common/gdb_assert.h:
+
+common/errors.h:
+
+common/print-utils.h:
+
+common/common-debug.h:
+
+common/cleanups.h:
+
+common/common-exceptions.h:
+
+common/poison.h:
+
+common/gdb_unique_ptr.h:
+
+build-gnulib/import/fcntl.h:
+
+gdb_wchar.h:
+
+build-gnulib/import/wctype.h:
+
+ui-file.h:
+
+common/host-defs.h:
+
+common/enum-flags.h:
+
+../include/hashtab.h:
+
+../include/fopen-bin.h:
+
+gdbarch.h:
+
+frame.h:
+
+language.h:
+
+symtab.h:
+
+common/gdb_vecs.h:
+
+common/vec.h:
+
+gdbtypes.h:
+
+common/offset-type.h:
+
+common/underlying.h:
+
+common/print-utils.h:
+
+common/function-view.h:
+
+common/gdb_optional.h:
+
+common/traits.h:
+
+completer.h:
+
+command.h:
+
+common/scoped_restore.h:
+
+minsyms.h:
+
+expression.h:
+
+std-operator.def:
+
+ada-operator.def:
+
+unwind_stop_reasons.def:
+
+../include/dis-asm.h:
+
+gdb_obstack.h:
+
+regcache.h:
+
+common/common-regcache.h:
+
+utils.h:
+
+exceptions.h:
+
+ui-out.h:
+
+inferior.h:
+
+breakpoint.h:
+
+value.h:
+
+extension.h:
+
+mi/mi-cmds.h:
+
+common/vec.h:
+
+common/gdb_ref_ptr.h:
+
+common/vec.h:
+
+ax.h:
+
+common/ax.def:
+
+common/break-common.h:
+
+probe.h:
+
+location.h:
+
+common/array-view.h:
+
+common/traits.h:
+
+cli/cli-script.h:
+
+target.h:
+
+infrun.h:
+
+common/byte-vector.h:
+
+common/def-vector.h:
+
+common/default-init-alloc.h:
+
+target/target.h:
+
+target/waitstatus.h:
+
+common/gdb_signals.h:
+
+target/resume.h:
+
+target/wait.h:
+
+target/waitstatus.h:
+
+memattr.h:
+
+btrace.h:
+
+common/btrace-common.h:
+
+record.h:
+
+disasm.h:
+
+tracepoint.h:
+
+memrange.h:
+
+common/environ.h:
+
+progspace.h:
+
+gdb_bfd.h:
+
+registry.h:
+
+symfile-add-flags.h:
+
+common/refcounted-object.h:
+
+common/common-inferior.h:
+
+gdbcmd.h:
+
+gdbcore.h:
+
+exec.h:
+
+reggroups.h:
+
+target-float.h:
+
+arch-utils.h:
+
+osabi.h:
+
+frame-unwind.h:
+
+frame-base.h:
+
+trad-frame.h:
+
+objfiles.h:
+
+objfile-flags.h:
+
+symfile.h:
+
+dwarf2-frame.h:
+
+prologue-value.h:
+
+remote.h:
+
+remote-notif.h:
+
+common/queue.h:
+
+target-descriptions.h:
+
+common/tdesc.h:
+
+user-regs.h:
+
+observable.h:
+
+common/observable.h:
+
+arch/arm.h:
+
+arch/arm-get-next-pcs.h:
+
+arm-tdep.h:
+
+../include/gdb/sim-arm.h:
+
+../bfd/elf-bfd.h:
+
+../include/elf/common.h:
+
+../include/elf/external.h:
+
+../include/elf/internal.h:
+
+../include/bfdlink.h:
+
+../include/coff/internal.h:
+
+../include/elf/arm.h:
+
+../include/elf/reloc-macros.h:
+
+record-full.h:
+
+features/arm/arm-with-m.c:
+
+defs.h:
+
+osabi.h:
+
+target-descriptions.h:
+
+features/arm/arm-with-m-fpa-layout.c:
+
+features/arm/arm-with-m-vfp-d16.c:
+
+features/arm/arm-with-iwmmxt.c:
+
+features/arm/arm-with-vfpv2.c:
+
+features/arm/arm-with-vfpv3.c:
+
+features/arm/arm-with-neon.c:
+
+../bfd/bfd-in2.h:
+
+../bfd/libcoff.h:
+
+../bfd/coff-bfd.h:
